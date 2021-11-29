@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-header">
+        <header class="main-head">
+            <nav>
+                <div class="logo">
+                    <img src="../static/medical-svgrepo-com.svg" alt="Coder">
+                    <h1>AKA Health Care</h1>
+                </div>
+                <h1>Diabetes Checker</h1>
+            </nav>
+        </header>
+    </div>
+    <div class="form-container heart-cont">
+        <form action="{{url_for('pred_diabetes')}}" method="post">
+            <title>Title</title>
+            <div>Glucose: &nbsp; <input type="text" name="Glucose"></div>
+            <div>BloodPressure:&nbsp; <input type="text" name="BloodPressure"></div>
+            <div>SkinThickness:&nbsp; <input type="text" name="SkinThickness"></div>
+            <div>BMI:&nbsp;&nbsp; <input type="text" name="BMI"></div>
+            <div>DiabetesPedigreeFunction: <input type="text" name="DiabetesPedigreeFunction"></div>
+            <div>Age:&nbsp;&nbsp; <input type="text" name="Age"></div>
+            <div><input type="submit" value="predict"></div>
+        </form>
+        <form action="/menu" method="post">
+            <input type="submit" value="Main Menu">
+        </form>
+    </div>
+    <footer>
+        <div>
+            <h4> K E V I N &nbsp;&nbsp;&nbsp; E M M A T T Y &copy; &nbsp;&nbsp;&nbsp; 2021</h4>
+        </div>
+        <div>
+            <h4> A N U R A G &nbsp;&nbsp;&nbsp; D I X I T &copy; &nbsp;&nbsp;&nbsp; 2021</h4>
+        </div>
+        <div>
+            <h4> A R C H I N &nbsp;&nbsp;&nbsp; J O S H I &copy; &nbsp;&nbsp;&nbsp; 2021</h4>
+        </div>
+    </footer>
+</body>
+
+<h3 class="pred">{{pred_text}}</h3>
+
+</html>

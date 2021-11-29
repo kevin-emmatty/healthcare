@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <title>Upload Image</title>
+</head>
+
+<body>
+  <div class="main-header">
+    <header class="main-head">
+      <nav>
+        <div class="logo">
+          <img src="../static/medical-svgrepo-com.svg" alt="Coder">
+          <h1>AKA Health Care</h1>
+        </div>
+        <h1>Pneumonia</h1>
+      </nav>
+    </header>
+  </div>
+
+
+  <div class="col-sm">
+    <div class="form-container">
+      <form action="/predict_pneumonia" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <input type="submit" value="Upload">
+      </form>
+
+      <form action="/menu" method="post">
+        <input type="submit" value="Main Menu">
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <h4> K E V I N &nbsp;&nbsp;&nbsp; E M M A T T Y &copy; &nbsp;&nbsp;&nbsp; 2021</h4>
+    </div>
+    <div>
+      <h4> A N U R A G &nbsp;&nbsp;&nbsp; D I X I T &copy; &nbsp;&nbsp;&nbsp; 2021</h4>
+    </div>
+    <div>
+      <h4> A R C H I N &nbsp;&nbsp;&nbsp; J O S H I &copy; &nbsp;&nbsp;&nbsp; 2021</h4>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-header">
+        <header class="main-head">
+            <nav>
+                <div class="logo">
+                    <img src="../static/medical-svgrepo-com.svg" alt="Coder">
+                    <h1>AKA Health Care</h1>
+                </div>
+                <h1>Home</h1>
+            </nav>
+        </header>
+    </div>
+    <div class="form-container">
+        <form action="{{url_for('select_model')}}" method="post">
+            <div>
+                <div>
+                    <h1>&nbsp;&nbsp; Model :</h1>
+                </div>
+                <select name="pred_model" id="">
+                    <option value="heart">Heart Attack Prediction</option>
+                    <option value="diabetes">Diabetes Prediction</option>
+                    <option value="brain">Brain Tumor Prediction</option>
+                    <option value="lung">Pneumonia Prediction</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div>
+            <h4> K E V I N &nbsp;&nbsp;&nbsp; E M M A T T Y &copy; &nbsp;&nbsp;&nbsp; 2021</h4>
+        </div>
+        <div>
+            <h4> A N U R A G &nbsp;&nbsp;&nbsp; D I X I T &copy; &nbsp;&nbsp;&nbsp; 2021</h4>
+        </div>
+        <div>
+            <h4> A R C H I N &nbsp;&nbsp;&nbsp; J O S H I &copy; &nbsp;&nbsp;&nbsp; 2021</h4>
+        </div>
+    </footer>
+</body>
+
+</html>

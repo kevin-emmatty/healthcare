@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <title>Tumour Detection</title>
+</head>
+
+<body>
+  <div class="main-header">
+    <header class="main-head">
+      <nav>
+        <div class="logo">
+          <img src="../static/medical-svgrepo-com.svg" alt="Coder">
+          <h1>AKA Health Care</h1>
+        </div>
+        <h1>Tumour Checker</h1>
+      </nav>
+    </header>
+  </div>
+
+  <div class="form-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <span class="border border-primary">
+            <img src="{{ user_image }}" alt="Selected Image" class="img-thumbnail">
+          </span>
+        </div>
+
+        <div class="col-sm">
+          <h3>Result : <span>{{product}}</span></h3>
+        </div>
+
+      </div>
+    </div>
+    <form action="/menu" method="post">
+      <input type="submit" value="Main Menu">
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <footer>
+    <div>
+      <h4> K E V I N &nbsp;&nbsp;&nbsp; E M M A T T Y &copy; &nbsp;&nbsp;&nbsp; 2021</h4>
+    </div>
+    <div>
+      <h4> A N U R A G &nbsp;&nbsp;&nbsp; D I X I T &copy; &nbsp;&nbsp;&nbsp; 2021</h4>
+    </div>
+    <div>
+      <h4> A R C H I N &nbsp;&nbsp;&nbsp; J O S H I &copy; &nbsp;&nbsp;&nbsp; 2021</h4>
+    </div>
+  </footer>
+</body>
+
+</html>
